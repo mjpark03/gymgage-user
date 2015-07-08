@@ -1,0 +1,54 @@
+doctype html
+
+html
+	head
+		title GYMGAGE - user
+
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+		//- <!-- 부트스트랩 -->
+		link(href='/stylesheets/bootstrap.css', rel='stylesheet', media='screen')
+		link(href='/stylesheets/style.css', rel='stylesheet')
+		link(href='/stylesheets/dashboard.css', rel='stylesheet')
+
+	body
+		//- <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요한) -->
+		script(src='//code.jquery.com/jquery.js')
+		//- <!-- 모든 합쳐진 플러그인을 포함하거나 (아래) 필요한 각각의 파일들을 포함하세요 -->
+		script(src='/javascripts/bootstrap.js')
+		script(src='/javascripts/respond.js')
+		script(src='http://localhost:3000/socket.io/socket.io.js')
+		script(type='text/javascript', src='/javascripts/workout.js')
+
+		nav(class='navbar navbar-default')
+			div.container-fluid
+				div.navbar-header
+					button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+						span(class="sr-only") Toggle navigation
+						span(class="icon-bar")
+						span(class="icon-bar")
+						span(class="icon-bar")
+
+					a(class="navbar-brand" id='a_main') GYMGAGE - user
+
+				div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+					ul(class="nav navbar-nav navbar-right")
+						li.active
+							a(href="#") INFO
+						li
+							a(href="#") WORKOUT
+						li
+							a(href="#") HELP
+
+	block main_body
+
+	div.jumbotron
+		div.align-center
+			footer#main-footer
+				.inner-col
+					div(class="footer-address")
+						div
+							span admin@gymgage.com
+						div
+							span GYMGAGE&nbsp;&nbsp;&#124;&nbsp;&nbsp;서울시 강남구 역삼동 683-34&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+							span 대표 김일신

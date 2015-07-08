@@ -1,0 +1,15 @@
+extends main_layout
+
+block main_body
+
+		div.jumbotron
+			div.align-center
+
+				form(action='/workout', method='get', id='workoutForm')
+					div(class='row placeholders')
+						div(class='col-sm-offset-4 col-sm-4 placeholder')
+							img(id='workout' data-src="holder.js/200x200/auto/vine" class="img-responsive img-center" alt="200x200" src="/images/tag.png" data-holder-rendered="true")
+							h4 Tag
+							span(class="text-muted") your ID key ...
+
+
