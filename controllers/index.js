@@ -3,7 +3,7 @@
 'use strict';
 
 /*
-	global module
+	controllers/*.js init
 
 	by Rachel
 */

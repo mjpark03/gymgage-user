@@ -4,6 +4,11 @@
 
 var logger;
 
+/*
+	API test
+
+	by Rachel
+*/
 var testGetData = function(req, res) {
 
 	logger.log('info', 'controllers - api - testGetData');
@@ -15,7 +20,6 @@ var testGetData = function(req, res) {
 module.exports = function(app, bodyParser, loggerObj){
 
 	logger = loggerObj;
-
 	logger.log('info', 'controller - api - module.exports');
 
 	app.post('/test/getData', testGetData);
